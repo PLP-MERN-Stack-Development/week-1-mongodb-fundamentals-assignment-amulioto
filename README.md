@@ -1,47 +1,111 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19867879&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# 📚 MongoDB Fundamentals Assignment – PLP Bookstore Project
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+This is my completed assignment for learning MongoDB basics. It includes creating a database, inserting book data, performing CRUD operations, running advanced queries, using aggregation pipelines, and adding indexes for optimization.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+## 🧠 What This Project Includes
 
-## Getting Started
+I created a MongoDB project with the following:
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+- A database called `plp_bookstore`
+- A `books` collection with 12 sample book documents
+- Queries to:
+  - Create, update, and delete documents
+  - Filter, sort, and paginate data
+  - Analyze data using aggregation
+  - Add indexes and check performance with `.explain()`
 
-## Files Included
+---
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+## 📂 Files in This Project
 
-## Requirements
+| File              | Description |
+|-------------------|-------------|
+| `insert_books.js` | JavaScript file to insert book data into the `books` collection |
+| `queries.js`      | Contains all the MongoDB queries I wrote for the assignment |
+| `screenshot.PNG`  | Screenshot of my database setup in MongoDB Compass |
+| `README.md`       | This file, explaining my project and how to run it |
+| `Week1-Assignment.md` | Assignment instructions from the instructor |
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+---
 
-## Submission
+## 🛠️ How to Run the Project
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### ✅ Prerequisites
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+Make sure you have one of the following:
 
-## Resources
+- MongoDB installed locally OR  
+- A free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+You also need:
+
+- [MongoDB Shell (mongosh)](https://www.mongodb.com/try/download/shell)  
+  or  
+- [MongoDB Compass GUI](https://www.mongodb.com/products/compass)
+
+---
+
+### 🧪 Steps to Run
+
+1. **Open your terminal or mongosh**
+2. **Insert the book data**:
+
+   ```bash
+   mongosh < insert_books.js
+Run my queries:
+
+Open the queries.js file and copy each query into your shell to test it step-by-step.
+
+You can also explore the database using MongoDB Compass.
+
+✅ Tasks Completed
+📌 Task 1: MongoDB Setup
+Created the plp_bookstore database
+
+Created the books collection
+
+📌 Task 2: CRUD Operations
+Inserted multiple book documents
+
+Updated book price and added new fields
+
+Deleted a book using deleteOne()
+
+📌 Task 3: Advanced Queries
+Found books by genre, author, and year
+
+Used projection and sorting
+
+Implemented pagination with limit() and skip()
+
+📌 Task 4: Aggregation Pipelines
+Calculated average book price by genre
+
+Found the most frequent author
+
+Grouped books by publication decade
+
+📌 Task 5: Indexing
+Created single and compound indexes
+
+Checked performance improvements using .explain("executionStats")
+
+📸 Screenshot
+A screenshot of my MongoDB Compass setup is saved in:
+
+screenshot.PNG
+📚 Helpful Resources I Used
+MongoDB Documentation
+
+MongoDB University (Free Courses)
+
+Compass GUI Tool
+
+MongoDB Shell Guide
+
+🙋‍♂️ About Me
+I'm a student learning the MERN stack through the Power Learn Project. This is one of my MongoDB projects showing what I’ve learned about databases.
+
+Thank you for reviewing my project!
